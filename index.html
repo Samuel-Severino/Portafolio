@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Severino | Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Menú Flotante Centrado -->
+    <nav class="nav-wrapper">
+      <div class="nav">
+        <div class="container">
+          <a href="#perfil" class="btn nav-link">Sobre mí</a>
+          <a href="#experiencia" class="btn nav-link">Experiencia</a>
+          <a href="#habilidades" class="btn nav-link">Habilidades</a>
+          <a href="#proyectos" class="btn nav-link" id="btn-proyectos">Proyectos</a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 400 60"
+            height="60"
+            width="400"
+            overflow="visible"
+            class="outline"
+          >
+            <rect
+              stroke-width="5"
+              fill="transparent"
+              height="60"
+              width="400"
+              y="0"
+              x="0"
+              pathLength="100"
+              class="rect"
+            ></rect>
+          </svg>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Contenido Principal del Portafolio -->
+    <main id="main-content">
+        <header class="hero">
+            <div class="hero-container">
+                <img src="img/foto.png" alt="Samuel Severino" class="profile-img">
+                <div class="hero-text">
+                    <h1>Samuel Severino</h1>
+                    <h2>Analista de Sistemas</h2>
+                    <p>Especializado en desarrollo de sistemas web, gestión de bases de datos y soporte en infraestructura IT.</p>
+                    <a href="#contacto" class="hero-btn">Contáctame</a>
+                </div>
+            </div>
+        </header>
+
+        <section id="perfil" class="section">
+            <h2>Perfil Académico</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>TSU en Análisis de Sistemas</h3>
+                    <p class="subtitle">IUTEPI - Instituto Universitario de Tecnología para la Informática</p>
+                    <ul>
+                        <li>Certificación en desarrollo de sistemas en Odoo.</li>
+                        <li>Manejo de herramientas para levantamiento de información y gestión de proyectos.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Formación en Idiomas</h3>
+                    <p class="subtitle">Cleveland English Institute</p>
+                    <ul>
+                        <li>Graduado en el idioma Inglés.</li>
+                        <li>Manejo de Inglés Técnico para entornos de desarrollo.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencia" class="section dark-section">
+            <h2>Experiencia Laboral</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Arrocera Chispa C.A.</h3>
+                    <span class="date">Pasantías (3 Meses)</span>
+                    <p>Desarrollo e implementación del sistema web de inventario de Gasoil.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Cleveland English Institute</h3>
+                    <span class="date">Asesor Online</span>
+                    <p>Creación de actividades dinámicas para estudiantes utilizando herramientas gráficas como Adobe Illustrator y Photoshop.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="section">
+            <h2>Habilidades Técnicas</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Desarrollo Web</h3>
+                    <p>Python, HTML, CSS, JavaScript, Odoo</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Bases de Datos</h3>
+                    <p>SQL Server (Diseño, desarrollo y manejo)</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Sistemas y Redes</h3>
+                    <p>Manejo de Servidores, Máquinas Virtuales (Linux y Windows), Mantenimiento de Redes, Soporte Técnico</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Diseño y Gestión</h3>
+                    <p>Adobe Illustrator, Photoshop, Gestión de Proyectos</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section dark-section">
+            <h2>Contacto</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> samuelsev.work2020@gmail.com</p>
+                <p><i class="fas fa-phone"></i> 0422-6358626 / 0412-1534059</p>
+                <p><i class="fas fa-map-marker-alt"></i> Acarigua-Portuguesa, Venezuela</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Samuel Severino. Todos los derechos reservados.</p>
+        </footer>
+    </main>
+
+    <!-- Vista Exclusiva de Proyectos / GitHub -->
+    <section id="github-view" class="hidden-view">
+        <button id="close-github-btn" class="close-btn"><i class="fas fa-times"></i> Volver al Inicio</button>
+        <div class="github-container">
+            <!-- Columna Izquierda: Background dinámico -->
+            <div class="github-bg-side"></div>
+            
+            <!-- Columna Derecha: Información de GitHub y Proyectos -->
+            <div class="github-info-side">
+                <h2>Proyectos & Repositorios</h2>
+                <p class="section-desc">Aquí puedes explorar mis desarrollos y repositorios de código abierto en GitHub.</p>
+                
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <i class="fab fa-github project-icon"></i>
+                        <h3>Páginas Web</h3>
+                        <p>Colección y proyectos de desarrollo frontend, maquetación web y plantillas dinámicas.</p>
+                        <a href="https://github.com/Samuel-Severino/Paginas_web.git" target="_blank" rel="noopener noreferrer" class="github-link">
+                            <i class="fab fa-github"></i> Ver Repositorio
+                        </a>
+                    </div>
+
+                    <div class="project-card">
+                        <i class="fab fa-github project-icon"></i>
+                        <h3>Sistemas Web</h3>
+                        <p>Desarrollos orientados a aplicaciones y sistemas web interactivos.</p>
+                        <a href="https://github.com/Samuel-Severino/Sistemas_web.git" target="_blank" rel="noopener noreferrer" class="github-link">
+                            <i class="fab fa-github"></i> Ver Repositorio
+                        </a>
+                    </div>
+
+                    <div class="project-card">
+                        <i class="fab fa-github project-icon"></i>
+                        <h3>Sistemas Ejecutables</h3>
+                        <p>Programas y software de escritorio desarrollados para soluciones locales y optimización de procesos.</p>
+                        <a href="https://github.com/Samuel-Severino/Sistemas_ejecutables.git" target="_blank" rel="noopener noreferrer" class="github-link">
+                            <i class="fab fa-github"></i> Ver Repositorio
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
